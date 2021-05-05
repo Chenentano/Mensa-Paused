@@ -18,8 +18,3 @@ Basitan
 
 ##############################################
 
-
-GEISTIGES EIGENTUM
-COPYRIGHT : Özkan Gerigelmez und Bastian Behrendt
-
-1000 Euro pro Lizenz
