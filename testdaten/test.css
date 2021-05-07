@@ -1,0 +1,50 @@
+html, body, .grid-container { height: 100%; margin: 0; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.4fr 0.1fr;
+  grid-template-rows: 0.1fr 0.8fr 1fr 3.2fr 0.7fr 0.4fr 0.1fr;
+  gap: 10px 10px;
+  grid-template-areas:
+    ". . . . . . . ."
+    ". Header Header Header Header Header Header ."
+    ". KW Vorspeise Hauptspeise Nachspeise Getränke Warenkorb_Bild ."
+    ". . . . . . Warenkorb ."
+    ". . . . . . Summe ."
+    ". Footer Footer Footer Footer Footer Footer ."
+    ". . . . . . . .";
+}
+
+.Header { grid-area: Header; }
+
+.KW { grid-area: KW; }
+
+.Vorspeise { grid-area: Vorspeise; }
+
+.Hauptspeise { grid-area: Hauptspeise; }
+
+.Nachspeise { grid-area: Nachspeise; }
+
+.Getränke { grid-area: Getränke; }
+
+.Warenkorb_Bild { grid-area: Warenkorb_Bild; }
+
+.Warenkorb { grid-area: Warenkorb; }
+
+.Summe { grid-area: Summe; }
+
+.Footer { grid-area: Footer; }
+
+
+/* For presentation only, no need to copy the code below */
+.grid-container * {
+  border: 1px solid red;
+  position: relative;
+}
+
+.grid-container *:after {
+  content:attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
