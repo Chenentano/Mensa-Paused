@@ -146,6 +146,9 @@ a:active {
 .Bild_V { 
 
 	grid-area: Bild_V;
+	height: 200px;
+	width:200px;
+	margin-left:20%;
 }
 
 .P_V { 
@@ -167,10 +170,11 @@ a:active {
 	background-color:grey;
 }
 
-.Bild_H { 
-
+.Bild_H {
 	grid-area: Bild_H;
-
+	height: 200px;
+	width: 200px;
+	margin-left: 20%;
 }
 
 .P_H { 
@@ -194,10 +198,11 @@ a:active {
 	background-color:grey;
 }
 
-.Bild_N { 
-
-	grid-area: Bild_N; 
-
+.Bild_N {
+	grid-area: Bild_N;
+	height: 200px;
+	width: 200px;
+	margin-left: 20%;
 }
 
 .P_N { 
@@ -221,10 +226,11 @@ a:active {
 	  background-color:grey;
 }
 
-.Bild_G { 
-
+.Bild_G {
 	grid-area: Bild_G;
-
+	height: 200px;
+	width: 200px;
+	margin-left: 20%;
 }
 
 .P_G { 
