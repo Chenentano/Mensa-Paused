@@ -107,8 +107,9 @@ a:active {
 	background-color:grey;
 }
 
-.Icon_KW { 
-	grid-area: Icon_KW; 	
+.Icon_KW {
+	grid-area: Icon_KW;
+	margin-left: 10%;
 }
 
 .KW_Z {
