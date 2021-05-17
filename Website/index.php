@@ -1,9 +1,10 @@
 <?php
+	// Damit niemand direkt auf die Hauptseite zugreifen kann ohne login
 session_start();
 if(!isset($_SESSION["username"])){
   header("Location: login.php");
   exit;
-}
+} 
  ?>
 <!DOCTYPE html>
 <html lang="de">
