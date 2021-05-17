@@ -1,0 +1,311 @@
+/* Allgemeines */
+html, body, .grid-container { 
+
+	height: 100%; 
+	margin: 0;
+	
+	
+
+ }
+ 
+ img {
+    width: 100%;
+    object-fit: fill;
+    height: 155px;
+}
+/* Allgemeines ende */
+ 
+ /* Links  */
+a:link {
+  text-decoration: none;
+  color:black;
+}
+
+a:visited {
+  text-decoration: none;
+  color:blue;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:white;
+}
+
+a:active {
+  text-decoration: underline;
+}
+/* Links ende */
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 0.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.2fr 1.4fr 0.1fr;
+	grid-template-rows: 0.1fr 1.1fr 1fr 2.8fr 0.8fr 0.4fr 0.1fr;
+	gap: 10px 10px;
+	grid-template-areas:
+    ". . . . . . . ."
+    ". Header Header Header Header Header Header ."
+    ". KW Vorspeise Hauptspeise Nachspeise Getränke Warenkorb_Bild ."
+    ". . . . . . Warenkorb ."
+    ". . . . . . Summe ."
+    ". Footer Footer Footer Footer Footer Footer ."
+    ". . . . . . . .";
+}
+
+/* Header/MainMenu */
+.Header {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1.3fr 0.7fr;
+	gap: 0px 0px;
+	grid-template-areas:
+    "Bild_Header Bild_Header Bild_Header"
+    "Home Support Logout";
+	grid-area: Header;
+	background-color:#34495e;
+}
+
+.Home {
+
+	grid-area: Home;
+	background-color:red;
+	text-align:center;
+
+	}
+
+.Support {
+	grid-area: Support;
+	background-color:yellow;
+	text-align:center;
+	}
+	
+.Logout {
+	grid-area: Logout;
+	background-color:green;
+	text-align:center;
+
+	}
+	
+.Bild_Header {
+
+	grid-area: Bild_Header;
+	text-align:center;
+
+	}
+/* Header/MainMenu ende	 */
+
+
+/* Kalenderwoche */
+.KW {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+	"Icon_KW Icon_KW Icon_KW"
+    "KW_Z KW_A KW_V";
+	grid-area: KW;
+	background-color:grey;
+}
+
+.Icon_KW { 
+	grid-area: Icon_KW; 	
+}
+
+.KW_Z {
+
+	grid-area: KW_Z; 
+	background-color:red;
+}
+
+.KW_A { 
+
+	grid-area: KW_A;
+	background-color:yellow;
+}
+
+.KW_V { 
+
+	grid-area: KW_V;
+	background-color:green;
+}
+/* Kalenderwoche ende */
+
+/* Vorspeise */
+.Vorspeise {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+	"Bild_V Bild_V Bild_V"
+	"P_V P_V P_V";
+	grid-area: Vorspeise;
+	background-color:grey;
+}
+
+.Bild_V { 
+
+	grid-area: Bild_V;
+}
+
+.P_V { 
+	grid-area: P_V;
+	background-color:yellow;
+}
+/* Vorspeise ende */
+
+/* Hauptspeise */
+.Hauptspeise {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+	"Bild_H Bild_H Bild_H"
+	"P_H P_H P_H";
+	grid-area: Hauptspeise;
+	background-color:grey;
+}
+
+.Bild_H { 
+
+	grid-area: Bild_H;
+
+}
+
+.P_H { 
+
+	grid-area: P_H; 
+	background-color:yellow;
+
+}
+/* Hauptspeise ende */
+
+/* Nachspeise */
+.Nachspeise {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas:
+		"Bild_N Bild_N Bild_N"
+		"P_N P_N P_N";
+	grid-area: Nachspeise;
+	background-color:grey;
+}
+
+.Bild_N { 
+
+	grid-area: Bild_N; 
+
+}
+
+.P_N { 
+
+	grid-area: P_N;
+	background-color:yellow;
+
+ }
+/* Nachspeise ende */
+
+/* Getränke */
+.Getränke {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr 1fr;
+	  grid-template-rows: 1fr 1fr;
+	  gap: 0px 0px;
+	  grid-template-areas:
+		"Bild_G Bild_G Bild_G"
+		"P_G P_G P_G";
+	  grid-area: Getränke;
+	  background-color:grey;
+}
+
+.Bild_G { 
+
+	grid-area: Bild_G;
+
+}
+
+.P_G { 
+
+	grid-area: P_G;
+	background-color:yellow;
+
+}
+/* Getränke ende */
+
+/* Warenkorb */
+.Warenkorb_Bild { 
+
+	grid-area: Warenkorb_Bild;
+
+}
+
+
+.Warenkorb { 
+
+	grid-area: Warenkorb;
+	background-color:grey;
+}
+
+.Summe { 
+
+	grid-area: Summe; 
+	background-color:grey;
+
+}
+/* Warenkorb ende */
+
+/* Footer */
+.Footer {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". Impressum FAQ Copyright";
+  grid-area: Footer;
+  background-color:red;
+}
+
+.Impressum { 
+
+	grid-area: Impressum; 
+	/* text-align:center; */
+	background-color:red;
+
+}
+
+
+.FAQ { 
+
+	grid-area: FAQ; 
+	background-color:yellow;
+	
+}
+
+.Copyright { 
+
+	grid-area: Copyright; 
+	background-color:Green;
+	
+}
+
+
+/* Footer Ende */
+
+
+/* Rote Linien für Präsentationen */
+/* .grid-container * { */
+  /* border: 1px solid red; */
+  /* position: relative; */
+/* } */
+
+/* .grid-container *:after { */
+  /* content:attr(class); */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+/* } */
+/* Linien ende */
