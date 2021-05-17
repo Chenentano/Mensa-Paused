@@ -23,6 +23,7 @@
           $stmt->bindParam(":pw", $hash);
           $stmt->execute();
           echo "Dein Account wurde angelegt";
+		  header("Location: login.php");
         } else {
           echo "Die Passwörter stimmen nicht überein";
         }

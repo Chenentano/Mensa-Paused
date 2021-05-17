@@ -1,135 +1,155 @@
-<?php
-	// Damit niemand direkt auf die Hauptseite zugreifen kann ohne login
-session_start();
-if(!isset($_SESSION["username"])){
-  header("Location: login.php");
-  exit;
-} 
- ?>
+	<?php
+		session_start();
+		if(!isset($_SESSION["username"])){
+		  header("Location: login.php");
+		  exit;
+		}
+	 ?>
 <!DOCTYPE html>
 <html lang="de">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="stylesheet/Mensa.css">
-	<meta http-equiv="refresh" content="5" >
+	<link rel="stylesheet" href="stylesheet/mensa.css">
+	<!-- <meta http-equiv="refresh" content="1" > -->
     <title>Titel der Seite | Name der Website</title>
   </head>
   <body>
   
 <!-- Header / MENÜ -->
 <div class="grid-container">
+
+<!-- Header -->
+
   <div class="Header">
-    <div class="Logout">
-		<p><a href="logout.php">Logout</a></p>
+		<h1> Toller Header wie beim Fußball </h1>
+  </div>
+  <div class="Navigation">
+    <div class="home">
+		<div class="pfeil"><a href="index.php"><img src="bilder/home.png" alt="home"></div></a>
 	</div>
-    <div class="Support">
-		<p><a href="google">Support</a></p>
+    <div class="support">
+		<div class="pfeil"><a href="https://www.md-systemhaus.de/kontakt"><img src="bilder/support.png" alt="support"></div></a>
 	</div>
-    <div class="Home">
-		<p><a href="google">Home</a></p>
-	</div>
-    <div class="Bild_Header">
-		<h1>Tolles MD Logo.. WOW!</h1>
+    <div class="logout">
+		<div class="pfeil"><a href="logout.php"><img src="bilder/logout.png" alt="logout"></div></a>
 	</div>
   </div>
- <!-- Bilder / Menü ende  -->
   
-  <!-- Kalenderwoche --> 
+  <!-- Header ende-->
+  
+  <!-- Header -->
+  
+   <!-- KW -->
+  
   <div class="KW">
-    <div class="Icon_KW">
-		<p>Icon für KW</p>
-	</div>
+	<p>Kalenderwoche</p>
+  </div>
+    <div class="KW_Auswahl">
     <div class="KW_Z">
-		<p>Zurück_KW</p>
+		<div class="pfeil"><img src="bilder/p_links.png" alt="pfeil_links"></div>
 	</div>
     <div class="KW_A">
-		<p>Auswahl_KW</p>
+		<div class="pfeil"><img src="bilder/kwicon.png" alt="kwicon"></div>
 	</div>
     <div class="KW_V">
-		<p>Vor_KW</p>
+		<div class="pfeil"><img src="bilder/p_rechts.png" alt="pfeil_rechts"></div>
 	</div>
   </div>
-  <!-- Kalenderwoche -->
   
+    <!-- KW ende-->
+	
+	<!-- Bilder essen-->
   
-  <!-- Vorspeise --> 
-  <div class="Vorspeise">
-    <div class="Bild_V">
-		<p>Vorpeise_Bild</p>
-	</div>
-    <div class="P_V">
-		<p>Pfeil_V</p>
-	</div>
+  <div class="Vorspeise_Bild">
+		<div class="pfeil"><img src="bilder/frosch.png" alt="pepe"></div>
   </div>
-  <!-- Vorspeise ennde -->
-  
-  
-  <!-- Hauptspeise -->
-  <div class="Hauptspeise">
-    <div class="Bild_H">
-		<p>Bild_H</p>
-	</div>
-    <div class="P_H">
-		<p>Pfeil_H</p>
-	</div>
+  <div class="Hauptgang_Bild">
+		<div class="pfeil"><img src="bilder/frosch.png" alt="pepe"></div>
   </div>
-  <!-- Hauptspeise ende -->
-  
-  <!-- Nachspeise -->
-  <div class="Nachspeise">
-    <div class="Bild_N">
-		<p>Bild_N</p>
-	</div>
-    <div class="P_N">
-		<p>Pfeil_N</p>
-	</div>
+  <div class="Nachspeise_Bild">
+		<div class="pfeil"><img src="bilder/frosch.png" alt="pepe"></div>
   </div>
-  <!-- Nachspeise ende -->
-  
-  <!-- Getränke -->
-  <div class="Getränke">
-    <div class="Bild_G">
-		<p>Bild_G</p>
-	</div>
-    <div class="P_G">
-		<p>Pfeil_G</p>
-	</div>
+  <div class="Getränk_Bild">
+		<div class="pfeil"><img src="bilder/frosch.png" alt="pepe"></div>
   </div>
-  <!-- Getränke ende -->
+
   
-  <!-- Warenkorb header -->
+  <!-- Bilder essen ende-->
+  
+  <!-- Pfeile-->
+  
+  <div class="P_V">
+		<!-- <p>Pfeil</p> -->
+		<div class="pfeil"><img src="bilder/pfeil.png" alt="pfeil"></div>
+  </div>
+  <div class="P_H">
+		<div class="pfeil"><img src="bilder/pfeil.png" alt="pfeil"></div>		
+  </div>
+  <div class="P_N">
+		<div class="pfeil"><img src="bilder/pfeil.png" alt="pfeil"></div>
+  </div>
+  <div class="P_G">
+		<div class="pfeil"><img src="bilder/pfeil.png" alt="pfeil"></div>
+  </div>
+  
+  <!-- pfeile ende-->
+  
+  <!-- warenkorb-->
+  
   <div class="Warenkorb_Bild">
-		<img src="bilder/warenkorb.png">
+  	<p>Warenkorb_Bild</p>
   </div>
-  <!-- Warenkorb header ende -->
-  
-  <!-- Warenkorb -->
   <div class="Warenkorb">
-	<p>Warenkorb Rechnung/Übersicht</p>
+ 		<p>Warenkorb</p> 
   </div>
-  <!-- Warenkorb ende -->
-  
-  <!-- Summe  -->
   <div class="Summe">
-	<p> Bezahlen </p>
+ 		<p>Summe</p>   
   </div>
-  <!-- Summe ende  -->
+  <!-- warenkorb ende-->
   
-  <!-- Footer  -->
+  <!-- Platzhalter-->
+  
+  <div class="Platzhalter">
+ 		<p>Platzhalter</p> 
+  </div>
+  
+  <!-- Platzhalter ende-->
+  
+  <!-- Dropmenu-->
+  
+  <div class="Drop_V">
+		<p>Drop</p>  
+  </div>
+  <div class="Drop_H">
+ 		<p>Drop</p>   
+  </div>
+  <div class="Drop_N">
+		<p>Drop</p>    
+  </div>
+  <div class="Drop_G">
+		<p>Drop</p>    
+  </div>
+  
+  <!-- Drop ende-->
+  
+  <!-- Footer-->
+  
   <div class="Footer">
+    <div class="Impressum">
+		<p><a href="https://www.md-systemhaus.de/impressum">Impressum</a></p> 	
+	</div>
+    <div class="FAQ">
+		<p><a href="https://www.md-systemhaus.de/datenschutz">Datenschutz</a></p> 	
+	</div>
     <div class="Copyright">
 		<p>&#169; Özkan & Bastian</p>
 	</div>
-    <div class="FAQ">
-		<p><a href="google.com">Datenschutz</a></p>
-	</div>
-    <div class="Impressum">
-		<p><a href="google.com">Impressum</a></p>
-	</div>
   </div>
+  
+    <!-- Footer ende-->
+  
 </div>
- <!-- Footer Ende  -->
 
   </body>
 </html>
