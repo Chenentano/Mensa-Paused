@@ -10,7 +10,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="stylesheet/oberfläche.css">
+	<link rel="stylesheet" href="stylesheet/Adminpanel.css">
 	<!-- <meta http-equiv="refresh" content="1" > -->
     <title>Adminpanel</title>
   </head>
@@ -20,8 +20,7 @@
 
 <!-- header -->
   <div class="Header">
-    
-
+      <p> Header </p>
   </div>
   <div class="Navigation">
     <div class="Bestellungen">
@@ -49,7 +48,7 @@
 
     </div>
     <div class="Logout">
-      <p> logout </p>
+      <p> Logout </p>
 
     </div>
   </div>
