@@ -101,7 +101,21 @@
   	<p>Warenkorb_Bild</p>
   </div>
   <div class="Warenkorb">
- 		<p>Warenkorb</p> 
+    <div class="Heute_W">
+      <p>Heute_W</p>
+    </div>
+    <div class="Vorpeise_W">
+       <p>Vorspeise_W</p>     
+    </div>
+    <div class="Hauptspeise_W">
+       <p>Hauptspeise_W</p>     
+    </div>
+    <div class="Nachspeise_W">
+        <p>Nachspeise_W</p>    
+    </div>
+    <div class="Getränk_W">
+        <p>Getränk_W</p>      
+    </div>
   </div>
   <div class="Summe">
  		<p>Summe</p>   
