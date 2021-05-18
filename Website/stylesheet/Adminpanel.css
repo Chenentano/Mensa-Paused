@@ -1,0 +1,137 @@
+html, body, .grid-container { height: 100%; margin: 0; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.3fr 2fr 2.1fr 0.3fr;
+  grid-template-rows: 0.4fr 0.3fr 3.1fr 0.2fr;
+  gap: px px;
+  grid-template-areas:
+    "Header Header Header Header"
+    "Navigation Navigation Navigation Navigation"
+    "Abstand_Links Oberfläche Oberfläche Abstand_Rechts"
+    "Footer Footer Footer Footer";
+}
+
+.Header { 
+
+  grid-area: Header; 
+  background-color:black;
+
+}
+
+.Navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Bestellungen Produkte Benutzer Kantinen Abrechnungen Allgemein Logout";
+  grid-area: Navigation;
+}
+
+.Bestellungen { 
+
+  grid-area: Bestellungen; 
+  background-color:red;
+
+}
+
+.Produkte { 
+
+  grid-area: Produkte; 
+  background-color:orange;
+}
+
+.Benutzer { 
+
+  grid-area: Benutzer; 
+  background-color:yellow;
+}
+
+.Kantinen { 
+
+  grid-area: Kantinen; 
+  background-color:green;
+}
+
+.Abrechnungen { 
+
+  grid-area: Abrechnungen; 
+  background-color:grey;
+}
+
+.Allgemein { 
+
+  grid-area: Allgemein; 
+  background-color:pink;
+}
+
+.Logout { 
+
+  grid-area: Logout; 
+  background-color:purple;
+}
+
+.Footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Impressum Kontakt Copyright";
+  grid-area: Footer;
+}
+
+.Impressum { 
+
+  grid-area: Impressum;
+  background-color:red;
+}
+
+.Kontakt { 
+
+  grid-area: Kontakt; 
+  background-color:yellow;
+
+}
+
+.Copyright { 
+
+  grid-area: Copyright; 
+  background-color:green;
+
+}
+
+.Abstand_Links { 
+
+  grid-area: Abstand_Links; 
+
+}
+
+.Abstand_Rechts { 
+
+  grid-area: Abstand_Rechts; 
+
+}
+
+.Oberfläche { 
+
+  grid-area: Oberfläche; 
+  background-color:blue;
+
+}
+
+
+/* For presentation only, no need to copy the code below */
+
+/*.grid-container * {
+  border: 1px solid red;
+  position: relative;
+}
+
+.grid-container *:after {
+  content:attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
