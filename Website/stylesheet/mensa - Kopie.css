@@ -186,53 +186,12 @@ a:active {
 	text-align:center;
 }
 
+.Warenkorb { 
 
-.Warenkorb {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "Heute_W"
-    "Vorpeise_W"
-    "Hauptspeise_W"
-    "Nachspeise_W"
-    "Getränk_W";
-  grid-area: Warenkorb;
-
+	grid-area: Warenkorb;
+	background-color:blue;
+	text-align:center;
 }
-
-.Heute_W { 
-
-	grid-area: Heute_W;
-  background-color:red;	
-
- }
-
-.Vorpeise_W { 
-
-	grid-area: Vorpeise_W; 
-    background-color:orange;
-}
-
-.Hauptspeise_W { 
-
-	grid-area: Hauptspeise_W; 
-    background-color:yellow;
-}
-
-.Nachspeise_W { 
-
-	grid-area: Nachspeise_W;
-    background-color:green;
- }
-
-.Getränk_W { 
-
-	grid-area: Getränk_W; 
-    background-color:blue;
-}
-
 
 .Summe { 
 
