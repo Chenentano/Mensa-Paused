@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="stylesheet/index.css">
-	   <meta http-equiv="refresh" content="1" > 
+	<link rel="stylesheet" href="stylesheet/mensa.css">
+	<!-- <meta http-equiv="refresh" content="1" > -->
     <title>Titel der Seite | Name der Website</title>
   </head>
   <body>
@@ -26,13 +26,13 @@
   </div>
   <div class="Navigation">
     <div class="home">
-		<div class="pfeil"><p><a href="index.php"><img src="bilder/home.png" alt="home"></div></a></p>
+		<div class="pfeil"><a href="index.php"><img src="bilder/home.png" alt="home"></div></a>
 	</div>
     <div class="support">
-		<div class="pfeil"><p><a href="https://www.md-systemhaus.de/kontakt"><img src="bilder/support.png" alt="support"></div></a></p>
+		<div class="pfeil"><a href="https://www.md-systemhaus.de/kontakt"><img src="bilder/support.png" alt="support"></div></a>
 	</div>
     <div class="logout">
-		<div class="pfeil"><p><a href="logout.php"><img src="bilder/logout.png" alt="logout"></div></a></p>
+		<div class="pfeil"><a href="logout.php"><img src="bilder/logout.png" alt="logout"></div></a>
 	</div>
   </div>
   
@@ -47,13 +47,13 @@
   </div>
     <div class="KW_Auswahl">
     <div class="KW_Z">
-		<div class="pfeil"><p><img src="bilder/p_links.png" alt="pfeil_links"></p></div>
+		<div class="pfeil"><img src="bilder/p_links.png" alt="pfeil_links"></div>
 	</div>
     <div class="KW_A">
-		<div class="pfeil"><p><img src="bilder/kwicon.png" alt="kwicon"></p></div>
+		<div class="pfeil"><img src="bilder/kwicon.png" alt="kwicon"></div>
 	</div>
     <div class="KW_V">
-		<div class="pfeil"><p><img src="bilder/p_rechts.png" alt="pfeil_rechts"><</div>
+		<div class="pfeil"><img src="bilder/p_rechts.png" alt="pfeil_rechts"></div>
 	</div>
   </div>
   
@@ -62,16 +62,16 @@
 	<!-- Bilder essen-->
   
   <div class="Vorspeise_Bild">
-		<div class="essen"><img src="bilder/pizza.png" alt="pepe"></div>
+		<div class="pfeil"><img src="bilder/frosch.png" alt="pepe"></div>
   </div>
   <div class="Hauptgang_Bild">
-		<div class="essen"><img src="bilder/pizza.png" alt="pepe"></div>
+		<div class="pfeil"><img src="bilder/frosch.png" alt="pepe"></div>
   </div>
   <div class="Nachspeise_Bild">
-		<div class="essen"><img src="bilder/pizza.png" alt="pepe"></div>
+		<div class="pfeil"><img src="bilder/frosch.png" alt="pepe"></div>
   </div>
   <div class="Getränk_Bild">
-		<div class="essen"><img src="bilder/pizza.png" alt="pepe"></div>
+		<div class="pfeil"><img src="bilder/frosch.png" alt="pepe"></div>
   </div>
 
   
@@ -81,16 +81,16 @@
   
   <div class="P_V">
 		<!-- <p>Pfeil</p> -->
-		<div class="pfeil"><p><img src="bilder/pfeil.png" alt="pfeil"></p></div>
+		<div class="pfeil"><img src="bilder/pfeil.png" alt="pfeil"></div>
   </div>
   <div class="P_H">
-		<div class="pfeil"><p><img src="bilder/pfeil.png" alt="pfeil"></p></div>		
+		<div class="pfeil"><img src="bilder/pfeil.png" alt="pfeil"></div>		
   </div>
   <div class="P_N">
-		<div class="pfeil"><p><img src="bilder/pfeil.png" alt="pfeil"></p></div>
+		<div class="pfeil"><img src="bilder/pfeil.png" alt="pfeil"></div>
   </div>
   <div class="P_G">
-		<div class="pfeil"><p><img src="bilder/pfeil.png" alt="pfeil"></p></div>
+		<div class="pfeil"><img src="bilder/pfeil.png" alt="pfeil"></div>
   </div>
   
   <!-- pfeile ende-->
@@ -98,24 +98,10 @@
   <!-- warenkorb-->
   
   <div class="Warenkorb_Bild">
-  	<div class="Warenkorb_B"><p><img src="bilder/warenkorb.png" alt="warenkorb"></p></div>
+  	<p>Warenkorb_Bild</p>
   </div>
   <div class="Warenkorb">
-    <div class="Heute_W">
-      <p>Heute_W</p>
-    </div>
-    <div class="Vorpeise_W">
-       <p>Vorspeise_W</p>     
-    </div>
-    <div class="Hauptspeise_W">
-       <p>Hauptspeise_W</p>     
-    </div>
-    <div class="Nachspeise_W">
-        <p>Nachspeise_W</p>    
-    </div>
-    <div class="Getränk_W">
-        <p>Getränk_W</p>      
-    </div>
+ 		<p>Warenkorb</p> 
   </div>
   <div class="Summe">
  		<p>Summe</p>   
