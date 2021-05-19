@@ -1,0 +1,383 @@
+html, body, .grid-container { height: 100%; margin: 0; }
+
+ /* Links  */
+a:link {
+  text-decoration: none;
+  color:black;
+}
+
+a:visited {
+  text-decoration: none;
+  color:black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color:white;
+}
+
+a:active {
+  text-decoration: underline;
+}
+/* Links ende */
+
+
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr;
+  grid-template-rows: 0fr 1fr 0.4fr 1fr 0.4fr 2.2fr 1fr 0.4fr 0.1fr;
+  gap: 5px 5px;
+  grid-template-areas:
+    ". . . . . . . . ."
+    ". Header Header Header Header Header Header Header ."
+    ". Navigation Navigation Navigation Navigation Navigation Navigation Navigation ."
+    ". KW KW Vorspeise_Bild Hauptgang_Bild Nachspeise_Bild Getränk_Bild Warenkorb_Bild ."
+    ". KW_Auswahl KW_Auswahl P_V P_H P_N P_G Warenkorb ."
+    ". Platzhalter Platzhalter Drop_V Drop_H Drop_N Drop_G Warenkorb ."
+    ". Platzhalter Platzhalter Drop_V Drop_H Drop_N Drop_G Summe ."
+    ". Footer Footer Footer Footer Footer Footer Footer ."
+    ". . . . . . . . .";
+}
+
+/* Header */
+
+.Header { 
+
+	grid-area: Header; 
+	background-color:grey;
+	text-align:center;
+	
+	}
+
+/* Header ende */
+
+
+/* NAV */
+.Navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "home support logout";
+  grid-area: Navigation;
+  background-color:red;
+}
+
+.home { 
+
+	grid-area: home;
+	background-color:red;
+	text-align:center;
+}
+
+.support { 
+
+	grid-area: support; 
+	background-color:yellow;
+	text-align:center;
+}
+
+.logout { 
+
+	grid-area: logout;
+	background-color:green;
+	text-align:center;
+}
+
+/* NAV ende */
+
+/* KW */
+
+.KW { 
+
+	grid-area: KW;
+	background-color:grey;
+	text-align:center;
+
+}
+
+.KW_Auswahl {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "KW_Z KW_A KW_V";
+  grid-area: KW_Auswahl;
+}
+
+.KW_Z { 
+
+	grid-area: KW_Z;
+	background-color:red;
+	text-align:center;
+}
+
+.KW_A { 
+
+	grid-area: KW_A; 
+	background-color:yellow;
+	text-align:center;
+}
+
+.KW_V { 
+
+	grid-area: KW_V; 
+	background-color:green;
+	text-align:center;	
+}
+
+/* KW */
+
+/* Essen Bilder */
+
+.Vorspeise_Bild { 
+
+	grid-area: Vorspeise_Bild;
+
+
+}
+
+.Vorspeise_Bild > .essen > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Hauptgang_Bild { 
+
+	grid-area: Hauptgang_Bild; 
+	
+}
+
+.Hauptgang_Bild > .essen > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.Nachspeise_Bild { 
+
+	grid-area: Nachspeise_Bild;
+
+	
+}
+
+.Nachspeise_Bild > .essen > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Getränk_Bild { 
+
+	grid-area: Getränk_Bild;
+}
+
+.Getränk_Bild > .essen > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Essen Bilder ende */
+
+/* Warenkorb */
+
+.Warenkorb_Bild { 
+
+	grid-area: Warenkorb_Bild; 
+}
+
+.Warenkorb_Bild > .Warenkorb_B > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.Warenkorb {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Heute_W"
+    "Vorpeise_W"
+    "Hauptspeise_W"
+    "Nachspeise_W"
+    "Getränk_W";
+  grid-area: Warenkorb;
+
+}
+
+.Heute_W { 
+
+	grid-area: Heute_W;
+  background-color:red;	
+
+ }
+
+.Vorpeise_W { 
+
+	grid-area: Vorpeise_W; 
+    background-color:orange;
+}
+
+.Hauptspeise_W { 
+
+	grid-area: Hauptspeise_W; 
+    background-color:yellow;
+}
+
+.Nachspeise_W { 
+
+	grid-area: Nachspeise_W;
+    background-color:green;
+ }
+
+.Getränk_W { 
+
+	grid-area: Getränk_W; 
+    background-color:blue;
+}
+
+
+.Summe { 
+
+	grid-area: Summe; 
+	background-color:grey;
+	text-align:center;	
+}
+
+/* Warenkorb ende */
+
+/* Pfeile */
+
+.P_V { 
+
+	grid-area: P_V;
+	background-color:red;
+	text-align:center;	
+}
+
+.P_H { 
+
+	grid-area: P_H;
+	background-color:orange;
+	text-align:center;
+}
+
+.P_N { 
+	
+	grid-area: P_N; 
+	background-color:yellow;
+	text-align:center;
+}
+
+.P_G { 
+	
+	grid-area: P_G;
+	background-color:green;
+	text-align:center;
+}
+
+/* Pfeile ende */
+
+/* Platzhalter */
+
+.Platzhalter { 
+
+	grid-area: Platzhalter;
+	background-color:grey;
+	text-align:center;
+}
+
+/* Platzhalter ende */
+
+/* drop menu */
+
+.Drop_V { 
+
+	grid-area: Drop_V; 
+	background-color:red;
+	text-align:center;	
+}
+
+.Drop_H { 
+
+	grid-area: Drop_H; 
+	background-color:orange;
+	text-align:center;	
+}
+
+.Drop_N { 
+
+	grid-area: Drop_N; 
+	background-color:yellow;
+	text-align:center;	
+}
+
+.Drop_G { 
+
+	grid-area: Drop_G; 
+	background-color:green;
+	text-align:center;
+}
+
+/* drop ende */
+
+/* footer */
+
+.Footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px 0px;
+  grid-template-areas:
+    "Impressum FAQ Copyright";
+  grid-area: Footer;
+}
+
+.Impressum { 
+
+	grid-area: Impressum; 
+	background-color:red;
+	text-align:center;	
+}
+
+.FAQ { 
+
+	grid-area: FAQ; 
+	background-color:yellow;
+	text-align:center;	
+}
+
+.Copyright {
+	
+	grid-area: Copyright; 
+	background-color:green;
+	text-align:center;	
+}
+
+/* footer ende */
+
+
+/* For presentation only, no need to copy the code below */
+/* .grid-container * { */
+  /* border: 1px solid red; */
+  /* position: relative; */
+/* } */
+
+/* .grid-container *:after { */
+  /* content:attr(class); */
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+/* } */
