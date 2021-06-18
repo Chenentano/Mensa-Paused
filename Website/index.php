@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  <link rel="stylesheet" href="stylesheet/index.css">
 	   <!--  <meta http-equiv="refresh" content="1" >  Auto-refresh / Deaktiviert @Gerisbase -->
-    <title>Titel der Seite | Name der Website</title>
+    <title>Mensa_Plus</title>
   </head>
   <body>
   
@@ -28,7 +28,7 @@
     <p class="Slogan">... Ihr IT-Systemhaus an der Nordseeküste</p>
   </div>
   <div class="Logo">
-      <img src="bilder/t.png" alt="MD_Logo">  
+    <img src="bilder/schule.png" alt="Logo der Schule">
   </div>
   <div class="Navigation">
     <div class="home">
