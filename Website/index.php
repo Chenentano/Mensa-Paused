@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="stylesheet/index.css">
-	   <meta http-equiv="refresh" content="1" > 
+	  <link rel="stylesheet" href="stylesheet/index.css">
+	   <!--  <meta http-equiv="refresh" content="1" >  Auto-refresh / Deaktiviert @Gerisbase -->
     <title>Titel der Seite | Name der Website</title>
   </head>
   <body>
@@ -59,7 +59,13 @@
   
     <!-- KW ende-->
 	
-	<!-- Bilder essen-->
+	<!-- 
+    @@@@@
+    TODO:@Gerisbase #5 Bilder einrichten/Anpassen
+    @@@@@
+    Bilder essen
+    
+    -->
   
   <div class="Vorspeise_Bild">
 		<div class="essen"><img src="bilder/pizza.png" alt="pepe"></div>
@@ -98,7 +104,10 @@
   <!-- warenkorb-->
   
   <div class="Warenkorb_Bild">
-  	<div class="Warenkorb_B"><p><img src="bilder/warenkorb.png" alt="warenkorb"></p></div>
+   <!--	
+    @@@@ Warenkorb_Bild ausgeklammert, falsche Pixel anzahl 
+    <div class="Warenkorb_B"><p><img src="bilder/warenkorb.png" alt="warenkorb"></p></div>
+     -->
   </div>
   <div class="Warenkorb">
     <div class="Heute_W">
