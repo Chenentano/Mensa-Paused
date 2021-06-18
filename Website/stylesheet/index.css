@@ -27,6 +27,7 @@ a:active {
 
 
 .grid-container {
+  
   display: grid;
   grid-template-columns: 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.1fr;
   grid-template-rows: 0fr 1fr 0.4fr 1fr 0.4fr 2.2fr 1fr 0.4fr 0.1fr;
