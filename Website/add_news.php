@@ -19,7 +19,7 @@ if(isBanned($_SESSION["username"])){
   <body>
     <h1>Top Secret</h1>
     <br>
-    <a href="addnews.php">Test hinzufügen</a>
+    <a href="addnews.php">News hinzufügen</a>
     <br>
     <?php
     if(getRank($_SESSION["username"]) >= MOD){
