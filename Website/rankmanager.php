@@ -6,9 +6,6 @@ define("ELTERN",2);
 define("ADMIN", 3);
 
 
-/*Eltern
-schlagwörter
-elternportal*/
 
 function getRank($username){
     require("mysql.php");
