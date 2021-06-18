@@ -22,17 +22,31 @@
 <!-- Header -->
 
   <div class="Header">
-		<h1> Toller Header wie beim Fußball </h1>
+	<!-- 	<img src="bilder/login_logo.gif"> -->
+    <br>
+    <br>
+    <p class="Slogan">... Ihr IT-Systemhaus an der Nordseeküste</p>
+  </div>
+  <div class="Logo">
+      <img src="bilder/t.png" alt="MD_Logo">  
   </div>
   <div class="Navigation">
     <div class="home">
-		<div class="pfeil"><p><a href="index.php"><img src="bilder/home.png" alt="home"></div></a></p>
+    <p>
+      <?php
+      if(isset($_SESSION['username'])){
+      echo "Hallo {$_SESSION['username']}";
+      }
+      ?>
+    <a href ="index.php"><p>Startseite</p></a>
+    </p>
+		<!-- <div class="pfeil"><p><a href="index.php"><img src="bilder/home.png" alt="home"></div></a></p> -->
 	</div>
     <div class="support">
-		<div class="pfeil"><p><a href="https://www.md-systemhaus.de/kontakt"><img src="bilder/support.png" alt="support"></div></a></p>
+		<div class="pfeil"><p><a href="https://www.md-systemhaus.de/kontakt"><img src="bilder/support.png" alt="support">Support</div></a></p>
 	</div>
     <div class="logout">
-		<div class="pfeil"><p><a href="logout.php"><img src="bilder/logout.png" alt="logout"></div></a></p>
+		<div class="pfeil"><p><a href="logout.php"><img src="bilder/logout.png" alt="logout">Logout</div></a></p>
 	</div>
   </div>
   
@@ -68,16 +82,16 @@
     -->
   
   <div class="Vorspeise_Bild">
-		<div class="essen"><img src="bilder/pizza.png" alt="pepe"></div>
+		<div class="essen"><img src="bilder/vorspeise.png" alt="pepe"></div>
   </div>
   <div class="Hauptgang_Bild">
-		<div class="essen"><img src="bilder/pizza.png" alt="pepe"></div>
+		<div class="essen"><img src="bilder/vorspeise.png" alt="pepe"></div>
   </div>
   <div class="Nachspeise_Bild">
-		<div class="essen"><img src="bilder/pizza.png" alt="pepe"></div>
+		<div class="essen"><img src="bilder/vorspeise.png" alt="pepe"></div>
   </div>
   <div class="Getränk_Bild">
-		<div class="essen"><img src="bilder/pizza.png" alt="pepe"></div>
+		<div class="essen"><img src="bilder/vorspeise.png" alt="pepe"></div>
   </div>
 
   
@@ -104,10 +118,7 @@
   <!-- warenkorb-->
   
   <div class="Warenkorb_Bild">
-   <!--	
-    @@@@ Warenkorb_Bild ausgeklammert, falsche Pixel anzahl 
-    <div class="Warenkorb_B"><p><img src="bilder/warenkorb.png" alt="warenkorb"></p></div>
-     -->
+    <div class="Warenkorb_B"><p><img src="bilder/frosch.png" alt="warenkorb"></p></div>
   </div>
   <div class="Warenkorb">
     <div class="Heute_W">
@@ -126,15 +137,15 @@
         <p>Getränk_W</p>      
     </div>
   </div>
-  <div class="Summe">
- 		<p>Summe</p>   
+    <div class="Summe">
+ 	    	<p>Summe</p>   
   </div>
   <!-- warenkorb ende-->
-  
+ 
   <!-- Platzhalter-->
-  
+
   <div class="Platzhalter">
- 		<p>Platzhalter</p> 
+  	<p>Platzhalter</p>	
   </div>
   
   <!-- Platzhalter ende-->
