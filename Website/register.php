@@ -14,7 +14,7 @@
       $stmt->execute();
       $count = $stmt->rowCount();
       if($count == 0){
-        //Username ist frei
+        //Username ist freit
         if($_POST["pw"] == $_POST["pw2"]){
           //User anlegen
           $stmt = $mysql->prepare("INSERT INTO accounts (USERNAME, PASSWORD) VALUES (:user, :pw)");
