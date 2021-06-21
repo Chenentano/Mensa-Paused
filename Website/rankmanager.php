@@ -7,6 +7,12 @@ define("ADMIN", 3);
 
 
 
+/**
+ * getRank
+ *
+ * @param  mixed $username
+ * @return void
+ */
 function getRank($username){
     require("mysql.php");
     $stmt = $mysql->prepare("SELECT * FROM accounts WHERE USERNAME = :user");
@@ -16,6 +22,12 @@ function getRank($username){
     return $row["SERVERRANK"];
 }
 
+/**
+ * isBanned
+ *
+ * @param  mixed $username
+ * @return void
+ */
 function isBanned($username){
     if(getRank($username) == -1){
         return true;
