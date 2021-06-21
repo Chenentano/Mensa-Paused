@@ -67,7 +67,7 @@
 		<div class="pfeil"><p><img src="bilder/kwicon.png" alt="kwicon"></p></div>
 	</div>
     <div class="KW_V">
-		<div class="pfeil"><p><img src="bilder/p_rechts.png" alt="pfeil_rechts"><</div>
+		<div class="pfeil"><p><img src="bilder/p_rechts.png" alt="pfeil_rechts"></div>
 	</div>
   </div>
   
