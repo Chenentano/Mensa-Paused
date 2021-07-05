@@ -20,7 +20,14 @@
 <div class="grid-container">
 
 <!-- Header -->
-
+<script type="text/javascript">
+<!--
+  function PopUp()
+  { 
+    window.open('popup.html','PopUp','width=800,height=400'); 
+  }
+//-->
+</script>
   <div class="Header">
 	<!-- 	<img src="bilder/login_logo.gif"> -->
     <br>
@@ -186,4 +193,6 @@
 </div>
 
   </body>
+  <body onload="PopUp()"> ... </body>
+
 </html>

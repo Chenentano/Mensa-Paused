@@ -21,14 +21,20 @@
           $_SESSION["username"] = $row["USERNAME"];
           header("Location: index.php");
         } else {
-          echo "Der Login ist fehlgeschlagen";
+          $message = "Benutzername oder Passwort falsch";
+          echo "<script type='text/javascript'>
+             alert('$message');
+          </script>";
+
         }
       } else {
-        echo "Der Login ist fehlgeschlagen";
+        $message = "Benutzername oder Passwort falsch!";
+        echo "<script type='text/javascript'>
+            alert('$message');
+        </script>";
       }
     }
-     ?>
-
+    ?>  
   
    <div class="bild_login">
 	<div class="Img_Login"><img src="bilder/frosch.png" alt="Login Logo"></div>
@@ -41,5 +47,6 @@
 	<input type="submit" name="submit" value="Einloggen">
     <a href="register.php">Noch keinen Account?</a>
   </form>
+
   
 </html>
