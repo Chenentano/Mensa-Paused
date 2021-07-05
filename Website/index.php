@@ -45,7 +45,7 @@
       echo "Hallo {$_SESSION['username']}";
       }
       ?>
-    <a href ="index.php"><p>Startseite</p></a>
+    <a href ="index.php"><p>Startseite!</p></a>
     </p>
 		<!-- <div class="pfeil"><p><a href="index.php"><img src="bilder/home.png" alt="home"></div></a></p> -->
 	</div>
