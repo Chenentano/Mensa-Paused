@@ -1,1 +1,1 @@
-Project failed.
+Project paused
